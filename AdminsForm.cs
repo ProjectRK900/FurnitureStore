@@ -14,7 +14,7 @@ namespace WFRKCurs
     public partial class AdminsForm : Form
     {
         string constClient = "N'Нет'", assembly = "N'Нет'";
-        static string connectionString = @"Data Source= DESKTOP-EQH7H9H\SQLEXPRESS; Initial catalog=Курсовик (Мебельный); Integrated Security=True";
+        static string connectionString = @"Data Source= *deleted*; Initial catalog= *deleted* ; Integrated Security=True";
         SqlConnection MainCon = new SqlConnection(connectionString);
         bool work = false;
         Welcome goBack;
@@ -203,14 +203,14 @@ namespace WFRKCurs
 
         private void AdminsForm_Load(object sender, EventArgs e)
         {
-            this.продажиTableAdapter1.Fill(this._Курсовик__Мебельный_DataSet3.Продажи);
-            this.staffWithoutPassTableAdapter.Fill(this._Курсовик__Мебельный_DataSet.StaffWithoutPass);
-            this.клиентыTableAdapter.Fill(this._Курсовик__Мебельный_DataSet1.Клиенты);
-            this.betterContractsTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.BetterContracts);
-            this.betterDeliveryTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.BetterDelivery);
-            //this.продажиTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.Продажи);
-            this.betterFurnitureTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.BetterFurniture);
-            this.материалыTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.Материалы);
+            this.продажиTableAdapter1.Fill(*deleted*);
+            this.staffWithoutPassTableAdapter.Fill(*deleted*);
+            this.клиентыTableAdapter.Fill(*deleted*);
+            this.betterContractsTableAdapter.Fill(*deleted*);
+            this.betterDeliveryTableAdapter.Fill(*deleted*);
+            //this.продажиTableAdapter.Fill(*deleted*);
+            this.betterFurnitureTableAdapter.Fill(*deleted*);
+            this.материалыTableAdapter.Fill(*deleted*);
 
             RefreshTab();
         }
@@ -219,37 +219,37 @@ namespace WFRKCurs
         {
             if (AllTablesTC.SelectedIndex == 0) // Сотрудники
             {
-                this.staffWithoutPassTableAdapter.Fill(this._Курсовик__Мебельный_DataSet.StaffWithoutPass);
+                this.staffWithoutPassTableAdapter.Fill(*deleted*);
                 StaffDGV.DataSource = staffWithoutPassBindingSource;
             }
             if (AllTablesTC.SelectedIndex == 1) // Клиенты
             {
-                this.клиентыTableAdapter.Fill(this._Курсовик__Мебельный_DataSet1.Клиенты);
+                this.клиентыTableAdapter.Fill(*deleted*);
                 ClientsDGV.DataSource = клиентыBindingSource;
             }
             if (AllTablesTC.SelectedIndex == 2) // Договора
             {
-                this.betterContractsTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.BetterContracts);
+                this.betterContractsTableAdapter.Fill(*deleted*);
                 ContractsDGV.DataSource = betterContractsBindingSource;
             }
             if (AllTablesTC.SelectedIndex == 3) // Доставка
             {
-                this.betterDeliveryTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.BetterDelivery);
+                this.betterDeliveryTableAdapter.Fill(*deleted*);
                 DeliveryDGV.DataSource = betterDeliveryBindingSource;
             }
             if (AllTablesTC.SelectedIndex == 4) // Продажи
             {
-                this.продажиTableAdapter1.Fill(this._Курсовик__Мебельный_DataSet3.Продажи);
+                this.продажиTableAdapter1.Fill(*deleted*);
                 SalesDGV.DataSource = продажиBindingSource2;
             }
             if (AllTablesTC.SelectedIndex == 5) // Мебель
             {
-                this.betterFurnitureTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.BetterFurniture);
+                this.betterFurnitureTableAdapter.Fill(*deleted*);
                 FurnitureDGV.DataSource = betterFurnitureBindingSource;
             }
             if (AllTablesTC.SelectedIndex == 6) // Материалы
             {
-                this.материалыTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.Материалы);
+                this.материалыTableAdapter.Fill(*deleted*);
                 MaterialsDGV.DataSource = материалыBindingSource;
             }
         }
