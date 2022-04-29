@@ -13,7 +13,7 @@ namespace WFRKCurs
 {
     public partial class Welcome : Form
     {
-        static string connectionString = @"Data Source= DESKTOP-EQH7H9H\SQLEXPRESS; Initial catalog=Курсовик (Мебельный); Integrated Security=True";
+        static string connectionString = @"Data Source= *deleted*; Initial catalog=*deleted*; Integrated Security=True";
         SqlConnection MainCon = new SqlConnection(connectionString);
         public Welcome()
         {
