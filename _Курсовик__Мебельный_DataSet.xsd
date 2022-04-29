@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Курсовик__Мебельный_DataSet" targetNamespace="http://tempuri.org/_Курсовик__Мебельный_DataSet.xsd" xmlns:mstns="http://tempuri.org/_Курсовик__Мебельный_DataSet.xsd" xmlns="http://tempuri.org/_Курсовик__Мебельный_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Курсовик__Мебельный_ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Курсовик__Мебельный_ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WFRKCurs.Properties.Settings.GlobalReference.Default.Курсовик__Мебельный_ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StaffWithoutPassTableAdapter" GeneratorDataComponentClassName="StaffWithoutPassTableAdapter" Name="StaffWithoutPass" UserDataComponentName="StaffWithoutPassTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Курсовик__Мебельный_ConnectionString (Settings)" DbObjectName="[Курсовик (Мебельный)].dbo.StaffWithoutPass" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, ФИО, Должность, Телефон, Оклад, Образование, [Роль в БД], Логин FROM dbo.StaffWithoutPass</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Должность" DataSetColumn="Должность" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Оклад" DataSetColumn="Оклад" />
+              <Mapping SourceColumn="Образование" DataSetColumn="Образование" />
+              <Mapping SourceColumn="Роль в БД" DataSetColumn="Роль в БД" />
+              <Mapping SourceColumn="Логин" DataSetColumn="Логин" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Курсовик__Мебельный_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Курсовик__Мебельный_DataSet" msprop:Generator_UserDSName="_Курсовик__Мебельный_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StaffWithoutPass" msprop:Generator_TableClassName="StaffWithoutPassDataTable" msprop:Generator_TableVarName="tableStaffWithoutPass" msprop:Generator_TablePropName="StaffWithoutPass" msprop:Generator_RowDeletingName="StaffWithoutPassRowDeleting" msprop:Generator_RowChangingName="StaffWithoutPassRowChanging" msprop:Generator_RowEvHandlerName="StaffWithoutPassRowChangeEventHandler" msprop:Generator_RowDeletedName="StaffWithoutPassRowDeleted" msprop:Generator_UserTableName="StaffWithoutPass" msprop:Generator_RowChangedName="StaffWithoutPassRowChanged" msprop:Generator_RowEvArgName="StaffWithoutPassRowChangeEvent" msprop:Generator_RowClassName="StaffWithoutPassRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Должность" msprop:Generator_ColumnVarNameInTable="columnДолжность" msprop:Generator_ColumnPropNameInRow="Должность" msprop:Generator_ColumnPropNameInTable="ДолжностьColumn" msprop:Generator_UserColumnName="Должность" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_UserColumnName="Телефон" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Оклад" msprop:Generator_ColumnVarNameInTable="columnОклад" msprop:Generator_ColumnPropNameInRow="Оклад" msprop:Generator_ColumnPropNameInTable="ОкладColumn" msprop:Generator_UserColumnName="Оклад" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Образование" msprop:Generator_ColumnVarNameInTable="columnОбразование" msprop:Generator_ColumnPropNameInRow="Образование" msprop:Generator_ColumnPropNameInTable="ОбразованиеColumn" msprop:Generator_UserColumnName="Образование" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Роль_x0020_в_x0020_БД" msprop:Generator_ColumnVarNameInTable="columnРоль_в_БД" msprop:Generator_ColumnPropNameInRow="Роль_в_БД" msprop:Generator_ColumnPropNameInTable="Роль_в_БДColumn" msprop:Generator_UserColumnName="Роль в БД">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Логин" msprop:Generator_ColumnVarNameInTable="columnЛогин" msprop:Generator_ColumnPropNameInRow="Логин" msprop:Generator_ColumnPropNameInTable="ЛогинColumn" msprop:Generator_UserColumnName="Логин">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StaffWithoutPass" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
