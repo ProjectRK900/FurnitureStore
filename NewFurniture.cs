@@ -43,8 +43,7 @@ namespace WFRKCurs
 
         private void NewFurniture_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "_Курсовик__Мебельный_DataSet2.Материалы". При необходимости она может быть перемещена или удалена.
-            this.материалыTableAdapter.Fill(this._Курсовик__Мебельный_DataSet2.Материалы);
+            this.материалыTableAdapter.Fill(*deleted*);
 
         }
     }
